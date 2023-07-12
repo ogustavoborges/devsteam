@@ -1,12 +1,14 @@
 .gamecard{
     background-color: #2983AA;
     display: flex;
+
 }
 
 .info{
     padding: 10px;
     flex: 1;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     
 }
@@ -39,4 +41,20 @@
     font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+@media (max-width: 700px){
+    .image{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .gamecard{
+        flex-direction: column;
+    }
+
+    .pricing{
+        flex-direction: column;
+    }
 }
